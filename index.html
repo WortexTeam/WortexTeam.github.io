@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Travel</title>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #080a12;
+            color: #b99e00;
+            font-family: 'Share Tech Mono', monospace;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
+            margin-top: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            background: #171a22;
+            padding: 10px 0;
+            margin-bottom: 32px;
+        }
+        nav a {
+            color: #b99e00;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 6px 18px;
+            border: 1px solid #b99e00;
+            border-radius: 7px;
+            margin: 0 6px;
+            background: #080a12;
+            transition: background 0.22s, color 0.22s;
+        }
+        nav a:hover {
+            background: #b99e00;
+            color: #080a12;
+        }
+        .links {
+            display: flex;
+            gap: 36px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #171a22;
+            color: #b99e00;
+            border: 2px solid #b99e00;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background 0.18s;
+        }
+        .links a:hover {
+            background: #b99e00;
+            color: #080a12;
+        }
+        section {
+            margin-bottom: 44px;
+        }
+        .section-title {
+            color: #b99e00;
+            font-size: 1.7em;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        .about-list, .team-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .team-list li {
+            margin-bottom: 14px;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 18px;
+        }
+        .screenshots img {
+            width: 230px;
+            height: 140px;
+            object-fit: cover;
+            border: 2px solid #b99e00;
+            border-radius: 8px;
+            transition: transform 0.25s;
+        }
+        .screenshots img:hover {
+            transform: scale(1.07);
+        }
+        .game-info {
+            margin: 14px 0 0 0;
+            font-size: 1.13em;
+            color: #b99e00;
+        }
+        @media (max-width: 900px) {
+            .screenshots img { width: 100%; }
+            .screenshots { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Summer Travel</h1>
+    <nav>
+        <a href="#main">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#characters">Персонажи</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://wortex-team.itch.io/summer-travel" target="_blank">Отзывы</a>
+        <a href="https://wortex-team.itch.io/summer-travel" target="_blank">Скачать</a>
+        <a href="#updates">Обновления</a>
+    </nav>
+    <div class="container">
+        <section id="main">
+            <div class="section-title">Описание</div>
+            <div class="game-info">Summer Travel — это симулятор жизни в открытом мире, где вы проживаете лето, выполняя различные задания. Катайтесь на велосипеде, жарьте шашлыки, пейте пиво — и многое другое! В игре есть интересные персонажи, с которыми можно взаимодействовать.</div>
+            <ul class="about-list">
+                <li>• Ранняя версия: возможны баги (сообщайте на Discord!)</li>
+                <li>• Увлекательный геймплей, уютная атмосфера</li>
+                <li>• Хорошая графика и атмосферный эмбиент</li>
+                <li>• Весёлая озвучка, хорошая оптимизация</li>
+            </ul>
+            <div class="links">
+                <a href="https://t.me/WortexTeaming" target="_blank">Telegram</a>
+                <a href="https://discord.gg/PYRZz2Xh8q" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@WortexTeaming" target="_blank">YouTube</a>
+            </div>
+            <div class="screenshots">
+                <img src="https://img.itch.zone/aW1hZ2UvNDE2MzExOC8yNDgxMzIzOS5wbmc=/original/LEOig7.png" alt="Summer Travel Screenshot 1">
+                <img src="https://img.itch.zone/aW1hZ2UvNDE2MzExOC8yNDgxMzI0My5wbmc=/original/%2FyuFel.png" alt="Summer Travel Screenshot 2">
+                <img src="https://img.itch.zone/aW1hZ2UvNDE2MzExOC8yNDgxMzI0MC5wbmc=/original/z7qNjW.png" alt="Summer Travel Screenshot 3">
+                <img src="https://img.itch.zone/aW1hZ2UvNDE2MzExOC8yNDgxMzI0Mi5wbmc=/original/GVCv9I.png" alt="Summer Travel Screenshot 4">
+            </div>
+        </section>
+        <!-- Дед патушил -->
+        <section id="about">
+            <div class="section-title">О нас</div>
+            <ul class="team-list">
+                <li><b>Fenix</b> — главный разработчик, кодер</li>
+                <li><b>Blank69</b> — разработчик, кодер</li>
+                <li><b>Beksu aka sova229</b> — разработчик, модельер+кодер</li>
+                <li><b>Motya</b> — разработчик, оформление+дизайн</li>
+                <li><b>WtMolnia</b> — разработчик, модельер</li>
+                <li><b>Petarda229</b> — создатель сайта, спасибо тебе Лёха за сайт))</li>
+            </ul>
+        </section>
+        <section id="characters">
+            <div class="section-title">Персонажи и статус</div>
+            <ul>
+                <li>Количество персонажей — <b>5</b></li>
+                <li>Статус игры: альфа, версия <b>0.1.5</b></li>
+                <li>Задания — в разработке</li>
+                <li>Секреты — ???</li>
+            </ul>
+        </section>
+        <section id="faq">
+            <div class="section-title">FAQ</div>
+            <ul>
+                <li><b>На какой стадии игра?</b> — В ранней альфе</li>
+                <li><b>Будут ли обновления?</b> — Да, следите за новостями!</li>
+                <li><b>Где обсуждать и делиться багами?</b> — В нашем Discord</li>
+            </ul>
+        </section>
+        <section id="updates">
+            <div class="section-title">Обновления</div>
+            <p>В разработке...</p>
+        </section>
+    </div>
+</body>
+</html>
